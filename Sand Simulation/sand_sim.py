@@ -113,7 +113,7 @@ while running:
                 running = False
             elif event.key == pygame.K_r:
                 # Reset the sand grid
-                sand_grid = [[0 for _ in range(GRID_HEIGHT)] for _ in range(GRID_WIDTH)]
+                reset_sand_grid()
 
     # Get mouse position and add sand if mouse is pressed
     if pygame.mouse.get_pressed()[0]:
