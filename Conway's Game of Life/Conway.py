@@ -39,7 +39,6 @@ class Conway:
                     self.running = False
                 elif event.key == pygame.K_SPACE:
                     self.paused = not self.paused
-                    print("Paused" if self.paused else "Resumed")
                 elif event.key == pygame.K_q:
                     self.quantum_fluctuation = not self.quantum_fluctuation
 
@@ -120,7 +119,6 @@ class Conway:
                             Y = math.floor(posY / (Constants().HEIGHT / Constants().block_count))
                             self.deleting = True
                 if self.writing and not self.running:
-
                     temp[X][Y] = 1
                     temp = temp.copy()
 
